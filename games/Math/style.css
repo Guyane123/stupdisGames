@@ -1,0 +1,174 @@
+
+* {
+    margin:0px;
+}
+body {
+    background-color: whitesmoke;
+    font-size: 1.5rem;
+    margin-top: 10px;
+
+}
+#nav {
+    width: auto;
+    position: absolute;
+    display: inline-block; 
+    height: 100%;
+    border: solid 3px black;
+    text-align: center;
+}
+
+/* #calculatorSection {
+    margin-top: -40%;
+    left:
+}
+#calculator {
+    left:50%;
+} */
+section {
+    position: absolute;
+}
+.btn {
+    width: 100%;
+    writing-mode: horizontal-tb;
+    text-rendering: auto;
+    color: black;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0px 0px;
+    border: solid black;
+    border: 2px;
+    z-index: 10;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+.div {
+    cursor: pointer;
+}
+.div:hover{
+    scale: 115%;
+    height: 50px;
+}
+
+#home {
+    margin-left: 10px;
+}
+.separation {
+    background-color: black;
+    height: 1px;
+    border-color: black;
+    margin-top: 5px;
+}
+hr {
+    background-color: black;
+    height: 1px;
+    border-color: black;
+    margin-top: 5px;
+}
+#percentResult {
+    margin-top: -65px;
+    margin-left: 200px;
+}
+
+#radioInput {
+    position: relative;
+    display: inline-block;
+}
+
+#converter {
+    position: relative;
+}
+#uOMNumber {
+    width: 50px;
+}
+
+#calculatorNumbers button {
+    height:50px;
+    width: 100px;
+    margin-top: 4px;
+    background-color: rgba(78, 78, 78, 0.897);
+    border: 0px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+#calculatorNumbers button:hover {
+    background-color:rgba(78, 78, 78, 0.600);
+}
+/* #calculatorNumbers {
+    /* margin-left: 30%; */
+/* } */
+#calculatorSection input {
+    margin-left: 30%;
+    width: 500px;
+    height: 72px;
+    border: 1px solid #3c4043;
+    border-radius: 8px;
+    padding: 10px 14px 0 10px;
+    box-sizing: border-box;
+}
+#calculatorSection input:hover {
+    background-color: aliceblue;
+}
+#pythagoreTriangle{
+    margin-top: 10px;
+    display : inline-block;
+    height : 0;
+    width : 0;
+    border-right : 150px solid transparent;
+    border-bottom : 150px solid black;
+}
+#pythagoreHypothenuse {
+    position: absolute;
+    margin-left: 80px;
+    margin-top: -110px; 
+}
+#pythagoreB, #pythagoreD {
+    position: absolute;
+    margin-top: -100px;
+    margin-left: -25px;
+}
+#pythagoreD {
+    margin-top: 0px;
+}
+#pythagoreC {
+    position: absolute;
+    margin-left: 50px;
+}
+#pythagoreResult {
+    text-align: left;
+    margin-left: 300px;
+    margin-top: -120px;
+}
+#pythagore {
+    margin-top: -40%;
+    margin-left: 5%;
+}
+#parameter{
+    position: absolute;
+    margin-top: -40%;
+}
+#parameterWhite, #parameterBlack{
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    border: #131313 solid 1px;
+    cursor: pointer;
+}
+#parameterWhite:hover, #parameterBlack:hover{
+    scale: 110%;
+}
+#parameterWhite {
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+}
+#parameterBlack {
+    background-color: #131313;
+    border: whitesmoke solid 1px;
+}
+.hidden{
+    visibility: hidden;
+}
+.white {
+    color: white;
+}

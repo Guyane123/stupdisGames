@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./favicon.ico" />
+        <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./android-chrome-192x192.png"
+        />
+        <meta
+            name="description"
+            content="Mes jeux stupides pour apprendre JavaScript"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Stupids Games 🥴</title>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <link rel="stylesheet" href="./games/Aim trainer/index.html" />
+    </head>
+    <body>
+        <div id="app">
+            <h1 class="title">
+                <span id="span1">Jeux stupides </span><span id="woozy">🥴</span>
+            </h1>
+            <div id="games">
+                <game
+                    name="Aim trainer 🎯"
+                    Description="Touche les cibles le plus vite possible!"
+                    v-bind:href="'./games/Aim trainer/index.html'"
+                ></game>
+                <game
+                    name="know Clicks Per Seconds 🖱️ (kCPS)"
+                    Description="Clique le plus vite possible!"
+                    v-bind:href="'./games/kCPS/index.html'"
+                ></game>
+                <game
+                    name="Jummpy🦘"
+                    Description="Évite les obstacles!"
+                    v-bind:href="'./games/jummpy/index.html'"
+                ></game>
+                <game
+                    name="Math 🤓📐"
+                    Description="Théorème de Pythagore, conversion, pourcentage et plus!"
+                    v-bind:href="'./games/Math/index.html'"
+                ></game>
+            </div>
+        </div>
+        <script src="vue.js"></script>
+    </body>
+</html>

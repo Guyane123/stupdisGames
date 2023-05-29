@@ -1,0 +1,134 @@
+
+
+body {
+    background-color: rgb(20,20,35);
+    color: white;
+    overflow: hidden;
+    font-family:fantasy;
+    margin: 0px, 10px;
+}
+#title{
+    text-align: right;
+    position: sticky;
+    margin-right: 41.5%;
+    transition: 2.5s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#title:hover{
+    transform: scale(2, 2)
+}
+#setting,
+#score {
+    background-color: rgba(230, 230, 255, 0.55);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: black;
+    font-size: 1.5rem;
+}
+button{
+    position: absolute;
+    height: auto;
+    width: 400px;
+    top: 30%;
+    left: 40%;
+    font-size: 2rem;
+    background-color: rgb(35, 150, 73);
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .5s;
+}
+button:hover {
+    scale: 120%;
+    background-color: rgb(40,175,85);
+}
+.hidden {
+    visibility: hidden;
+}
+
+#cube,
+.box {
+    height: 50px;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    scale: auto;
+    cursor:crosshair;
+    background-color: rgb(90 , 165 , 122);
+    border: solid 3px rgb(5, 5, 5);
+    border-radius: 10px;
+    transform: translateX(-50%)
+}
+.box{
+    margin-left: 60px;
+    cursor: crosshair;
+    display: inline-block;
+    margin-top: 30px;
+    transform: translateX(-50%)
+}
+#cube {
+    position: absolute;
+    transform: translateX(-50%)
+}
+#cube:hover,
+.box:hover {
+    scale: 120%;
+}
+
+#easybox{
+    height: 100px;
+    width: 100px;
+
+}
+#hardbox{
+    height: 25px;
+    width: 25px;
+}
+
+
+#input {
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 500px;
+}
+
+#color {
+    position: absolute;
+    top: 42%;
+    left:50%;
+    transform: translateX(-20%);
+
+}
+#time {
+    position: relative;
+    margin-left: 44.5%;
+    min-height: 1.5rem;
+
+}
+
+#h2 {
+    text-align: center;
+    font-size: 4rem;
+    color: black;
+    top: 40%;
+    position: relative;
+}
+#h1 {
+    position: absolute;
+    text-align: right; 
+    top: -5px;
+    right: 1%;
+}
+footer {
+    color: gray;
+    position: absolute;
+    top:97%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#score {
+    z-index: 200;
+    background-color: rgba(230, 230, 255, 0.55);
+}

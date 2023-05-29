@@ -1,0 +1,48 @@
+.hidden {
+    visibility: hidden;
+}
+body {
+    background-color: rgb(240, 240, 240);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#scores {
+    position: absolute;
+    top: 0%;
+    left: 90%;
+}
+#startBtn {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    height: 25%;
+    width: 50%;
+    min-width: 800px;
+    min-height: 25%;
+    background-color: rgb(165, 165, 165);
+    /* background-image: ; */
+    transform: translateX(-50%);
+    border: 2px black solid;
+}
+#startBtn:hover {
+    background-color: rgb(255, 255, 255);
+}
+#startH2 {
+    position: relative;
+    left: 50%;
+}
+#player, #playerL {
+    position: absolute;
+    bottom: 0px;
+    right: 600px;
+    height: 50px;
+    width: 20px;
+    background-color: black;
+}
+#enemie, #enemieL {
+    position: absolute;
+    right: 0px;
+    bottom: 0%;
+    background-color: black;
+    height: 25px;
+    width: 20px;
+}

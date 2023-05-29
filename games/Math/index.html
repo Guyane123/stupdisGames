@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="./script.js"></script>
+        <link
+            rel="shortcut icon"
+            href="https://cdn.discordapp.com/attachments/635919509932343336/1024659717282340914/unknown.png"
+            type="image/x-icon"
+        />
+        <title>Math</title>
+    </head>
+    <body>
+        <section id="nav">
+            <div id="navBtn">
+                <div id="percentDiv" class="div">
+                    <button id="percentBtn" class="btn">
+                        <h2 id="percentText" class="text">Pourcent <br />💯</h2>
+                    </button>
+                </div>
+                <hr class="separation" />
+                
+                <div id="converterDiv" class="div">
+                    <button id="converterBtn" class="btn">
+                        <h2 id="converterText" class="text">Convertir<br />💦</h2>
+                    </button>
+                </div>
+                <hr class="separation" />
+                <div id="pythagoreDiv" class="div">
+                    <button id="pythagoreBtn" class="btn">
+                        <h2 id="pythagoreText" class="text">
+                            Pythagore <br />📏
+                        </h2>
+                    </button>
+                </div>
+                <hr class="separation">
+                <div id="calculatorDiv" class="div">
+                    <button id="calculatorBtn" class="btn">
+                        <h2 id="calculatorText" class="text">
+                            Calculette <br />🖩
+                        </h2>
+                    </button>
+                </div>
+                <hr class="separation" />
+                <div id="homeDiv" class="div">
+                    <button id="homeBtn" class="btn">
+                        <h2 id="homeText" class="text">Menu <br />🏠</h2>
+                    </button>
+                </div>
+                <hr class="separation">
+                <div id="parameterDiv" class="div">
+                    <button id="parameterBtn" class="btn">
+                        <h2 id="parameterText" class="text">
+                            ⚙️
+                        </h2>
+                    </button>
+                </div>
+                <hr class="separation">
+            </div>
+        </section>
+        <hr />
+        <section id="math">
+            <section id="home">
+                <div>
+                    <h1><u>Menu🏠</u></h1>
+                </div>
+            </section>
+            
+            <section id="percent" class="hidden">
+                <!-- <h2 class="text"><u>Pourcent 💯</u>:</h2><br> -->
+                <div id="percentCalculResult">
+                    <div id="percentCalcul">
+                        <input
+                            type="number"
+                            placeholder="Effectif"
+                            id="percentInput1"
+                        />
+                        <hr width="175px" />
+                        <input
+                            type="number"
+                            id="percentInput2"
+                            placeholder="Effectif total"
+                        />
+                        <br /><button id="percentGetResultBtn">
+                            Get result
+                        </button>
+                    </div>
+                    <div id="percentResult">
+                        <strong
+                            ><span>* 100</span><span id="percentSpanResult"></span
+                        ></strong>
+                    </div>
+                </div>
+            </section>
+            <section id="converter" class="hidden">
+                <div>
+                    <div id="radioInput">
+                        <label for="gramme">Grammes⚖️<input type="radio" name="uOM" id="gramme" checked></label><br>
+                        <label for="distance">Mesures📐<input type="radio" name="uOM" id="distance"></label><br>
+                        <label for="litter">Littres🚰<input type="radio" name="uOM" id="litter"></label><br>
+                    </div>
+                    <div id="uOM">
+                        <input id ='uOMNumber' type="number">
+                        <select id='uOMSelect'>
+                            <option id ='m'value="default">Choisir une unitée
+                            <option id ='m'value="mg(milligramme)">mg(milligramme)
+                            <option id='c'value="cg(centigramme)">cg(centigramme)
+                            <option id="d" value="dg(decagramme)">dg(decagramme)
+                            <option id='g' value="g(gramme)">g(gramme)
+                            <option id='dam' value="dag(decagramme)">dag(decagramme)
+                            <option id='h'value="hg(hectogramme)">hg(hectogramme)
+                            <option id='k'value="kg(killogramme)">kg(killogramme)
+                        </select>
+                        <span>=</span>
+                        <span id="converterResult"></span>
+                        <select id='uOMSelectResult'>
+                            <option id ='mResult'value="default">Choisir une unitée
+                            <option id ='mResult'value="mg(milligramme)">mg(milligramme)
+                            <option id='cResult'value="cg(centigramme)">cg(centigramme)
+                            <option id="dResult" value="dg(decagramme)">dg(decagramme)
+                            <option id='gResult' value="g(gramme)">g(gramme)
+                            <option id='damResult' value="dag(decagramme)">dag(decagramme)
+                            <option id='hResult'value="hg(hectogramme)">hg(hectogramme)
+                            <option id='kResult'value="kg(killogramme)">kg(killogramme)
+                        </select>
+                        <div>
+                            <button id='uOMGetResultBtn'>Get Result</button>
+                        </div>
+                    </div>
+                    <!-- <div id="convert">
+
+                    </div> -->
+                </div>
+                
+            </section>
+            <section id="calculatorSection" class="hidden"> 
+                <!-- <div>
+                    <input type="calc" name="calculatorInput" value='0' placeholder="1+1">
+                </div> -->
+
+                <div id="calculatorNumbers">
+                    <input type="calc" id='calculatorInput'name="calculatorInput" value='' placeholder="1+1">
+                    <button value ='1'id="t1">1</button>
+                    <button value="2" id="t2">2</button>
+                    <button value="3" id="t3">3</button><br>
+                    <button value="4"id="t4" >4</button>
+                    <button value="5"id="t5">5</button>
+                    <button value="6"id="t6">6</button><br>
+                    <button value="7"id="t7">7</button>
+                    <button value="8"id="t8">8</button>
+                    <button value="9"id="t9">9</button><br>
+                    <button value="*"id="t*">x</button>
+                    <button value="/"id="t/">÷</button>
+                    <button value="+"id="t+">+</button><br>
+                    <button value="-"id="t-">−</button>
+                </div>
+            </section>
+            <section id="pythagore" name="%" class="hidden">
+                <em><h5>On sait que ce triangle est un triangle rectangle en D</h5>
+                    <h5>D'après le théorème de Pythagore on a :</h5></em>
+                <div>
+
+                    <input type="number" id="pythagoreInputB" placeholder="B" />
+                    <input type="number" id="pythagoreInputC" placeholder="C" />
+                    <button id="pythagoreGetResult">Get result</button>
+                </div>
+                <div>
+                    <div id="pythagoreTriangle"></div>
+                    <div>
+                        <h4><em id="pythagoreHypothenuse">A(Hypothénuse)</em></h4>
+                        <h4><em id="pythagoreB">B</em></h4>
+                        <h4><em id="pythagoreC">C</em></h4>
+                        <h4><em id="pythagoreD">D</em></h4>
+                    </div>
+                    <div id="pythagoreResult">
+                        <h3>Hypothénuse = B² + C²</h3>
+                        <h3 id="PythagoreResult1">Hypothénuse = 0² + 1²</h3>
+                        <h3 id="PythagoreResult2">Hypothénuse = √0²+1²</h3>
+                        <h3 id="PythagoreResult3">Hypothénuse = 1</h3>
+                        <h3 id="pythagoreResultH3"></h3>
+                        </h3>
+                    </div>
+                </div>
+            </section>
+            <section id='parameter' class="hidden">
+                <div>
+                    <div id="parameterWhite"></div>
+                    <div id="parameterBlack"></div>
+                </div>
+                <br>
+                <div>
+                    <h6 id="userData">User Data</h6>
+                </div>
+            </section>
+        </section>
+    </body>
+</html>

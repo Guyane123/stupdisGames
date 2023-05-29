@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>2</title>
+        <script src="./script.js"></script>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+
+    <body>
+        <header id="title">
+            <h1>AIM TRAINER🎯</h1>
+        </header>
+
+        <section id="setting">
+            <section id="time">
+                <!-- **********************************************TIME************************************************ -->
+                <label for="ten">10s⏳</label
+                ><input
+                    value="ten"
+                    class="ten"
+                    type="radio"
+                    name="time"
+                    id="ten"
+                />
+                <label for="thirty">30s⏳</label
+                ><input
+                    value="thirty"
+                    class="thirty"
+                    type="radio"
+                    id="thirty"
+                    name="time"
+                />
+                <label for="sixty">60s⏳</label
+                ><input
+                    value="sixty"
+                    class="sixty"
+                    type="radio"
+                    id="sixty"
+                    name="time"
+                />
+            </section>
+            <section>
+                <!-- **********************************************START BUTTON************************************************ -->
+                <button id="start">
+                    <div>
+                        <div id="arrow"></div>
+                        🌟
+                    </div>
+                    <div>
+                        <strong>START AIMING🎯</strong>
+                    </div>
+                </button>
+            </section>
+            <section id="colors">
+                <!-- **********************************************COLOR INPUT*********************************************** -->
+                <label
+                    ><input type="color" id="color" value="#00A57A" />
+                </label>
+            </section>
+            <section id="input">
+                <!-- **********************************************DIFFICULTY INPUT*********************************************** -->
+                <div>
+                    <input
+                        type="radio"
+                        name="dificulty"
+                        value="easy"
+                        id="easy"
+                    />
+                    <label for="easy">Easy📗</label>
+                    <input
+                        type="radio"
+                        name="dificulty"
+                        value="normal"
+                        checked
+                        id="normal"
+                    /><label for="normal">Normal📙</label>
+                    <input
+                        type="radio"
+                        name="dificulty"
+                        value="hard"
+                        id="hard"
+                    /><label for="hard">Hard📕</label>
+                </div>
+                <div>
+                    <label for="easy">
+                        <div id="easybox" class="box"></div>
+                    </label>
+                    <label for="normal">
+                        <div id="normalbox" class="box"></div>
+                    </label>
+                    <label for="hard">
+                        <div id="hardbox" class="box"></div>
+                    </label>
+                </div>
+            </section>
+        </section>
+        <!-- **********************************************SCORE SCREEN*********************************************** -->
+        <section id="score" class="hidden">
+            <strong>
+                <h2 id="h2">HEY</h2>
+            </strong>
+        </section>
+        <!-- **********************************************ELEMENT IN THE GAMES*********************************************** -->
+        <section id="games" class="hidden">
+            <div>
+                <h2 id="second"></h2>
+                <h2 id="h1">0000000</h2>
+                <div id="cube"></div>
+            </div>
+        </section>
+        <footer>
+            <!-- **********************************************ABOUT*********************************************** -->
+            <section id="about">
+                <small><em>Normal,∞,#00A57A</em></small>
+            </section>
+        </footer>
+    </body>
+</html>
